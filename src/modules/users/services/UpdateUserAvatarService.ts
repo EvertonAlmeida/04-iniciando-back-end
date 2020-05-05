@@ -14,7 +14,7 @@ interface IRequest {
   avatarFilename: string;
 }
 
-injectable();
+@injectable()
 export default class UpdateUserAvatarService {
   constructor(
     @inject('UsersRepository')
